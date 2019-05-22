@@ -1,0 +1,120 @@
+/*
+ * Madison Mehalko
+ * 17 February 2019
+ * Prompt 2, Bar Chart: 
+ * 
+ * Write a program that asks the user to enter today’s sales for five stores. 
+ * The program should display a bar chart comparing each store’s sales. 
+ * Create each bar in the bar chart by displaying a row of asterisks. 
+ * Each asterisk should represent $100 of sales. Here is an example of the program’s output:
+ *
+ *  Enter today's sales for store 1: 1000 [Enter]
+ *  Enter today's sales for store 2: 1200 [Enter]
+ *  Enter today's sales for store 3: 1800 [Enter]
+ *  Enter today's sales for store 4: 800 [Enter]
+ *  Enter today's sales for store 5: 1900 [Enter]
+ *  SALES BAR CHART
+ *  Store 1: **********
+ *  Store 2: ************
+ *  Store 3: ******************
+ *  Store 4: ********
+ *  Store 5: *******************
+ */
+
+import java.util.Scanner;
+import java.io.*;
+
+
+public class Option2 {
+	public static void main (String [] args) throws IOException {
+		
+		double store1, store2, store3, store4, store5 = 0;
+		String line;
+		
+		// Create a file named log.txt
+		File log = new File("log.txt");
+		PrintWriter outputFile = new PrintWriter(log);
+		
+		Scanner keyboard = new Scanner (System.in);
+		
+		// Grab store sales from user and store in variable.
+		System.out.print("Enter today's sales for store 1: ");
+		store1 = keyboard.nextInt();
+		
+		System.out.print("Enter today's sales for store 2: ");
+		store2 = keyboard.nextInt();
+		
+		System.out.print("Enter today's sales for store 3: ");
+		store3 = keyboard.nextInt();
+		
+		System.out.print("Enter today's sales for store 4: ");
+		store4 = keyboard.nextInt();
+		
+		System.out.print("Enter today's sales for store 5: ");
+		store5 = keyboard.nextInt();
+		
+		keyboard.close();
+
+		// Loop through each store to add * if there is an entry of more than 0.
+		if (store1 >= 0 && store2 >= 0 && store3 >= 0 && store4 >= 0 && store5 >= 0) {
+			
+		System.out.print("\nStore 1: ");
+		outputFile.print("Store 1: ");
+	
+		for (int i = 1; i < store1/99; i ++) {
+			line = "*";
+			System.out.print(line);
+			outputFile.print(line);
+			}
+		outputFile.println();
+		
+		System.out.print("\nStore 2: ");
+		outputFile.print("Store 2: ");
+	
+		for (int i = 1; i < store2/99; i ++) {
+			line = "*";
+			System.out.print(line);
+			outputFile.print(line);
+			}
+		outputFile.println();
+		
+		System.out.print("\nStore 3: ");
+		outputFile.print("Store 3: ");
+	
+		for (int i = 1; i < store3/99; i ++) {
+			line = "*";
+			System.out.print(line);
+			outputFile.print(line);
+			}
+		outputFile.println();
+		
+		System.out.print("\nStore 4: ");
+		outputFile.print("Store 4: ");
+	
+		for (int i = 1; i < store4/99; i ++) {
+			line = "*";
+			System.out.print(line);
+			outputFile.print(line);
+			}
+		outputFile.println();
+		
+		System.out.print("\nStore 5: ");
+		outputFile.print("Store 5: ");
+	
+		for (int i = 1; i < store5/99; i ++) {
+			line = "*";
+			System.out.print(line);
+			outputFile.print(line);
+			}
+		outputFile.println();
+		
+		System.out.print("\nData was successfully written to the file.");
+		outputFile.close();
+	} // End if statement.
+		// If entry is not 0 or above, the output file is not updated and the user is told the data write was not successful.
+		else {
+			System.out.print("\nStores cananot have negative sales. \nData was not successfully written to the file.");
+			outputFile.close();
+		} // End else statement.
+	}
+}
