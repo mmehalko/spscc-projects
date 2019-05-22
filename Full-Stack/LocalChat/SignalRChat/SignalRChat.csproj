@@ -142,7 +142,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Hubs\ChatHub.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductModel.cs" />

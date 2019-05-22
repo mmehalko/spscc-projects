@@ -44,11 +44,11 @@ input[type="checkbox"].input-validation-error {
 
 a:link, a:visited {
     color: #333;
-    padding: 14px 25px;
+    padding: 0px;
     text-align: center;
-    text-decoration: none;
+    text-decoration: underline;
     display: inline-block;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 a:hover, a:active {
@@ -57,6 +57,10 @@ a:hover, a:active {
 .navbar {
     height: 120px;
 }
+.navbar a {
+        padding: 14px 20px;
+        text-decoration: none;
+    }
 .navbar-brand img {
     width: 75px;
     margin-right: 20px;
@@ -113,6 +117,7 @@ section.pricing {
     transition: all 0.2s;
     background: #475DF6;
     color: #fff;
+    text-decoration: none;
 }
 
 .pricing .card:hover {
