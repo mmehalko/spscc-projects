@@ -22,6 +22,7 @@ namespace InvoiceTotal
 
 		private void btnCalculate_Click(object sender, EventArgs e)
 		{
+            const decimal DISCOUNTPERCENT = .25m;
             try
             {
                 // Check if subtotal string is empty or not.
@@ -35,8 +36,7 @@ namespace InvoiceTotal
                 {
                     // Set variables. Turn subtotal into a decimal, set math.
                     decimal subtotal = Decimal.Parse(txtSubtotal.Text);
-                    decimal discountPercent = .25m;
-                    decimal discountAmount = subtotal * discountPercent;
+                    decimal discountAmount = subtotal * DISCOUNTPERCENT;
                     decimal invoiceTotal = subtotal - discountAmount;
 
                     // Check to see if the subtotal entry is greater than 0 or less than 10,000. (Not equal to 0 or 10,000.)
@@ -48,7 +48,7 @@ namespace InvoiceTotal
                     invoiceTotal = Math.Round(invoiceTotal, 2);
 
                         // Convert and display totals.
-                    txtDiscountPercent.Text = discountPercent.ToString("p1");
+                    txtDiscountPercent.Text = DISCOUNTPERCENT.ToString("p1");
                     txtDiscountAmount.Text = discountAmount.ToString();
                     txtTotal.Text = invoiceTotal.ToString();
                         // Focus back on the subtotal textbox.
