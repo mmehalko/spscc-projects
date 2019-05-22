@@ -50,9 +50,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(24, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 13);
+            this.label1.Size = new System.Drawing.Size(154, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Amount of change due (0-99):";
+            this.label1.Text = "Amount of change due (1-100):";
             // 
             // txtChange
             // 

@@ -20,80 +20,45 @@ namespace ChangeCalculator
         // 11/08/17
         // Homework 7
 
-        // Is it present?
-        private bool IsPresent(string entry)
-        {
-            return entry != "";
-        }
-        // Is it a decimal?
-        private bool IsDecimal (string entry)
-        {
-            return Decimal.TryParse(entry, out decimal value);
-        }
-        // Is it an integer?
-        private bool IsInt(string entry)
-        {
-            return int.TryParse(entry, out int value);
-        }
-        // Is it within range?
-        private bool IsInRange(decimal value, decimal min, decimal max)
-        {
-            return value > min && value < max;
-        }
-
-
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            // Set variables and constants.
-            string message = "";
-            const int MIN = 0;
-            const int MAX = 100;
+            // Check if change amount is valid.
+            try
+            {
+                if (string.IsNullOrEmpty(txtChange.Text))
+                {
+                    return;
+                }
 
-            string scent = txtChange.Text;
+                // Is an int
+                var amount = 0;
+                if (int.TryParse(txtChange.Text, out amount))
+                {
+                    errorProvider1.Clear();
+                    var cc = new ChangeCalculator();
 
-            // Is there an entry?
-            if (IsPresent(scent))
-            { // Is it an intger?
-                if (IsInt(scent))
-                { // Convert to int.
-                    int icent = Convert.ToInt32(txtChange.Text);
-                    // Is it within range?
-                    if (IsInRange(icent, MIN, MAX))
-                    { // If it meets above validation, do the math!
-                        int quarters = (int)(icent / 25);
-                        icent = icent % 25;
 
-                        int dimes = (int)(icent / 10);
-                        icent = icent % 10;
+                    cc.Calculate(amount);
 
-                        int nickels = (int)(icent / 5);
-
-                        int pennies = icent % 5;
-
-                        txtQuarters.Text = quarters.ToString();
-                        txtDimes.Text = dimes.ToString();
-                        txtNickels.Text = nickels.ToString();
-                        txtPennies.Text = pennies.ToString();
-
-                    }
-                    else
-                    { // If it doesn't meet the min/max requirements, read message.
-                        message = string.Format("{0} is not a valid entry between 1 and 99", icent);
-                    }
+                    txtQuarters.Text = cc.quartersCount.ToString();
+                    txtDimes.Text = cc.dimesCount.ToString();
+                    txtNickels.Text = cc.nickelsCount.ToString();
+                    txtPennies.Text = cc.penniesCount.ToString();
                 }
                 else
-                {// If it doesn't meet the int validation, read message.
-                    message = string.Format("{0} isn't a valid integer.", scent);
+                {
+                    errorProvider1.SetError(txtChange, "Need to enter a number.");
                 }
             }
-            else
-            {// If entry is empty, read message.
-                message = "Need to enter a number.";
+
+            catch (ArgumentException ex)
+            {
+                errorProvider1.SetError(txtChange, ex.Message);
             }
-
-            errorProvider1.SetError(txtChange, message); // Have error provider read out error message.
-            txtChange.Focus(); // Focus change textbox.
-
+            finally
+            {
+                txtChange.Focus();
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)

@@ -44,3 +44,17 @@ C:\Users\Madison\Source\Repos\spscc-projects\C#\7ChangeCalculator\ChangeCalculat
 C:\Users\Madison\Source\Repos\spscc-projects\C#\7ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csproj.CoreCompileInputs.cache
 C:\Users\Madison\Source\Repos\spscc-projects\C#\7ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.exe
 C:\Users\Madison\Source\Repos\spscc-projects\C#\7ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.pdb
+C:\Users\Madison\source\repos\spscc-projects\C#\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csprojAssemblyReference.cache
+C:\Users\Madison\source\repos\spscc-projects\C#\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.Form1.resources
+C:\Users\Madison\source\repos\spscc-projects\C#\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.Properties.Resources.resources
+C:\Users\Madison\source\repos\spscc-projects\C#\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csproj.GenerateResource.cache
+C:\Users\Madison\source\repos\spscc-projects\C#\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Madison\source\repos\spscc-projects\C#\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.exe
+C:\Users\Madison\source\repos\spscc-projects\C#\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.pdb
+C:\Users\Madison\source\repos\spscc-projects\C#\ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.exe.config
+C:\Users\Madison\source\repos\spscc-projects\C#\ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.exe
+C:\Users\Madison\source\repos\spscc-projects\C#\ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.pdb
+C:\Users\Madison\source\repos\spscc-projects\C#\ChangeCalculator\ChangeCalculator\bin\Debug\nunit.framework.dll
+C:\Users\Madison\source\repos\spscc-projects\C#\ChangeCalculator\ChangeCalculator\bin\Debug\nunit.framework.pdb
+C:\Users\Madison\source\repos\spscc-projects\C#\ChangeCalculator\ChangeCalculator\bin\Debug\nunit.framework.xml
+C:\Users\Madison\source\repos\spscc-projects\C#\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csproj.CopyComplete
