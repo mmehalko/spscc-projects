@@ -28,6 +28,7 @@ namespace InvoiceTotal
 		/// </summary>
 		private void InitializeComponent()
 		{
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,6 +42,9 @@ namespace InvoiceTotal
             this.txtDiscountPercent = new System.Windows.Forms.TextBox();
             this.txtDiscountAmount = new System.Windows.Forms.TextBox();
             this.txtTotal = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnReset = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -119,7 +123,7 @@ namespace InvoiceTotal
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(44, 122);
+            this.btnCalculate.Location = new System.Drawing.Point(50, 122);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
             this.btnCalculate.TabIndex = 2;
@@ -129,7 +133,7 @@ namespace InvoiceTotal
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(131, 122);
+            this.btnExit.Location = new System.Drawing.Point(131, 166);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 3;
@@ -163,13 +167,28 @@ namespace InvoiceTotal
             this.txtTotal.TabIndex = 12;
             this.txtTotal.TabStop = false;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(131, 122);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 13;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.BtnReset_Click);
+            // 
             // frmInvoiceTotal
             // 
             this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(224, 159);
+            this.ClientSize = new System.Drawing.Size(232, 201);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.txtDiscountAmount);
             this.Controls.Add(this.txtDiscountPercent);
@@ -186,6 +205,7 @@ namespace InvoiceTotal
             this.Name = "frmInvoiceTotal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Invoice Total";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,6 +226,8 @@ namespace InvoiceTotal
 		private System.Windows.Forms.TextBox txtDiscountPercent;
 		private System.Windows.Forms.TextBox txtDiscountAmount;
 		private System.Windows.Forms.TextBox txtTotal;
-	}
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button btnReset;
+    }
 }
 
