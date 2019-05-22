@@ -45,81 +45,91 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 15);
+            this.label1.Location = new System.Drawing.Point(8, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 20);
+            this.label1.Size = new System.Drawing.Size(73, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Type of &Loop:";
             // 
             // txtLoop
             // 
-            this.txtLoop.Location = new System.Drawing.Point(140, 12);
+            this.txtLoop.Location = new System.Drawing.Point(93, 8);
+            this.txtLoop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLoop.Name = "txtLoop";
-            this.txtLoop.Size = new System.Drawing.Size(100, 26);
+            this.txtLoop.Size = new System.Drawing.Size(68, 20);
             this.txtLoop.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 70);
+            this.label2.Location = new System.Drawing.Point(8, 45);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 20);
+            this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "&Start Value";
             // 
             // txtStart
             // 
-            this.txtStart.Location = new System.Drawing.Point(140, 67);
+            this.txtStart.Location = new System.Drawing.Point(93, 44);
+            this.txtStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtStart.Name = "txtStart";
-            this.txtStart.Size = new System.Drawing.Size(100, 26);
+            this.txtStart.Size = new System.Drawing.Size(68, 20);
             this.txtStart.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 125);
+            this.label3.Location = new System.Drawing.Point(8, 81);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 20);
+            this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "&End Value:";
             // 
             // txtEnd
             // 
-            this.txtEnd.Location = new System.Drawing.Point(140, 122);
+            this.txtEnd.Location = new System.Drawing.Point(93, 79);
+            this.txtEnd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEnd.Name = "txtEnd";
-            this.txtEnd.Size = new System.Drawing.Size(100, 26);
+            this.txtEnd.Size = new System.Drawing.Size(68, 20);
             this.txtEnd.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 180);
+            this.label4.Location = new System.Drawing.Point(8, 117);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 20);
+            this.label4.Size = new System.Drawing.Size(62, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "S&tep Value:";
             // 
             // txtStep
             // 
-            this.txtStep.Location = new System.Drawing.Point(140, 177);
+            this.txtStep.Location = new System.Drawing.Point(93, 115);
+            this.txtStep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtStep.Name = "txtStep";
-            this.txtStep.Size = new System.Drawing.Size(100, 26);
+            this.txtStep.Size = new System.Drawing.Size(68, 20);
             this.txtStep.TabIndex = 7;
             // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(12, 237);
+            this.lblStatus.Location = new System.Drawing.Point(8, 154);
+            this.lblStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(51, 20);
+            this.lblStatus.Size = new System.Drawing.Size(66, 13);
             this.lblStatus.TabIndex = 8;
-            this.lblStatus.Text = "label5";
+            this.lblStatus.Text = "Status Label";
             // 
             // btnProcess
             // 
-            this.btnProcess.Location = new System.Drawing.Point(310, 15);
+            this.btnProcess.Location = new System.Drawing.Point(207, 10);
+            this.btnProcess.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnProcess.Name = "btnProcess";
-            this.btnProcess.Size = new System.Drawing.Size(128, 48);
+            this.btnProcess.Size = new System.Drawing.Size(85, 31);
             this.btnProcess.TabIndex = 9;
             this.btnProcess.Text = "&Process";
             this.btnProcess.UseVisualStyleBackColor = true;
@@ -127,9 +137,11 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(310, 69);
+            this.btnClear.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnClear.Location = new System.Drawing.Point(207, 45);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(128, 48);
+            this.btnClear.Size = new System.Drawing.Size(85, 31);
             this.btnClear.TabIndex = 10;
             this.btnClear.Text = "&Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -137,9 +149,10 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(310, 123);
+            this.btnExit.Location = new System.Drawing.Point(207, 80);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(128, 48);
+            this.btnExit.Size = new System.Drawing.Size(85, 31);
             this.btnExit.TabIndex = 11;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -148,10 +161,10 @@
             // UsingLoopsForm
             // 
             this.AcceptButton = this.btnProcess;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnClear;
-            this.ClientSize = new System.Drawing.Size(453, 283);
+            this.ClientSize = new System.Drawing.Size(302, 184);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnProcess);
@@ -164,6 +177,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtLoop);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UsingLoopsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Using Branches and Loops";

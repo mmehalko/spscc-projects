@@ -37,7 +37,7 @@ namespace BranchesAndLoops
             }
 
             // is start value a decimal > 0?
-            decimal startValue; // variable for txtStart.
+            decimal startValue; 
             if (decimal.TryParse(txtStart.Text, out startValue)) // parse txtStart into a decimal and read it out as your above variable (startValue)
             {
                 if (startValue <= 0) // is entered number above zero?

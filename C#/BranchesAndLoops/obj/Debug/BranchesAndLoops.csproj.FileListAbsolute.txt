@@ -18,3 +18,13 @@ C:\Users\Madison\OneDrive - South Puget Sound Community College\Past Quarters\20
 C:\Users\Madison\OneDrive - South Puget Sound Community College\Past Quarters\2017 Fall\BranchesAndLoops\obj\Debug\BranchesAndLoops.csproj.CoreCompileInputs.cache
 C:\Users\Madison\OneDrive - South Puget Sound Community College\Past Quarters\2017 Fall\BranchesAndLoops\obj\Debug\BranchesAndLoops.exe
 C:\Users\Madison\OneDrive - South Puget Sound Community College\Past Quarters\2017 Fall\BranchesAndLoops\obj\Debug\BranchesAndLoops.pdb
+C:\Users\Madison\source\repos\spscc-projects\C#\BranchesAndLoops\bin\Debug\BranchesAndLoops.exe.config
+C:\Users\Madison\source\repos\spscc-projects\C#\BranchesAndLoops\bin\Debug\BranchesAndLoops.exe
+C:\Users\Madison\source\repos\spscc-projects\C#\BranchesAndLoops\bin\Debug\BranchesAndLoops.pdb
+C:\Users\Madison\source\repos\spscc-projects\C#\BranchesAndLoops\obj\Debug\BranchesAndLoops.csprojAssemblyReference.cache
+C:\Users\Madison\source\repos\spscc-projects\C#\BranchesAndLoops\obj\Debug\BranchesAndLoops.UsingLoopsForm.resources
+C:\Users\Madison\source\repos\spscc-projects\C#\BranchesAndLoops\obj\Debug\BranchesAndLoops.Properties.Resources.resources
+C:\Users\Madison\source\repos\spscc-projects\C#\BranchesAndLoops\obj\Debug\BranchesAndLoops.csproj.GenerateResource.cache
+C:\Users\Madison\source\repos\spscc-projects\C#\BranchesAndLoops\obj\Debug\BranchesAndLoops.csproj.CoreCompileInputs.cache
+C:\Users\Madison\source\repos\spscc-projects\C#\BranchesAndLoops\obj\Debug\BranchesAndLoops.exe
+C:\Users\Madison\source\repos\spscc-projects\C#\BranchesAndLoops\obj\Debug\BranchesAndLoops.pdb
