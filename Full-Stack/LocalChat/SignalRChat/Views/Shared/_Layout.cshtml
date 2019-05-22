@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Final Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="~/Images/fp.png" alt="FPLogo" /> Final Project </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-link"><i class="fas fa-home"></i>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-links" })</li>
+                    <li class="nav-link"><i class="fas fa-comments"></i> @Html.ActionLink("Contact Us", "Contact", "Home", null, new { @class = "nav-links" })</li>
+                    <li class="nav-link"><i class="fas fa-shopping-bag"></i> @Html.ActionLink("Shopping Cart", "Index", "Cart", null, new { @class = "nav-links" })</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ 
+    <div class="container body-content">
+        @RenderBody()
+        <footer>
+            <div class="container">
+                <p>&copy; @DateTime.Now.Year - Final Project - Madison Mehalko</p>
+                </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

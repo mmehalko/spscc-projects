@@ -1,0 +1,82 @@
+﻿@using SignalRChat.Models
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1 class="mt-5">A Final Project</h1>
+            <p class="lead">Talk to your customers in real-time!</p>
+            <p>Projects are meant to be completed. Use Final Project to correspond with customers in real time while keeping notes of what's expected from both of you. Find the plan that meets the requirements for you and your clients.</p>
+        </div>
+
+        <section class="pricing py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
+                                <h6 class="card-price text-center">$0<span class="period">/month</span></h6>
+                                <hr>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Two Users</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Single-Use Storage</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>0 Public Projects</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Community Access</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Domain Hosting</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Maintenance</li>
+                                </ul>
+                                <a href="@Url.Action("Buy", "Cart", new { id = 1})" class="btn btn-block btn-primary text-uppercase">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Plus Tier -->
+                    <div class="col-lg-4">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+                                <h6 class="card-price text-center">$20<span class="period">/month</span></h6>
+                                <hr>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Six Users</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>10 Public Projects</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Domain Hosting</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Maintenance</li>
+                                </ul>
+                                <a href="@Url.Action("Buy", "Cart", new { id = 2})" class="btn btn-block btn-primary text-uppercase">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pro Tier -->
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
+                                <h6 class="card-price text-center">$120<span class="period">/month</span></h6>
+                                <hr>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Users</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Storage</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>150 Public Projects</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Domain Hosting</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Maintenance</li>
+                                </ul>
+                                <a href="@Url.Action("Buy", "Cart", new { id = 3})" class="btn btn-block btn-primary text-uppercase">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

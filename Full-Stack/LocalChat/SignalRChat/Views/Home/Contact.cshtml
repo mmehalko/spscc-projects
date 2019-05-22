@@ -1,0 +1,71 @@
+﻿@using SignalRChat.Models
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+    body {
+        background-color: #38AAA4;
+    }
+</style>
+<div class="container">
+    <div class="row text-white">
+                    <div class="col-md-6 mt-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.8014263713635!2d-122.93192978398208!3d47.024502679150395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54917449a3954311%3A0x9a28a48293bd0951!2sSouth+Puget+Sound+Community+College!5e0!3m2!1sen!2sus!4v1543810953875" width="520" height="570" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6 ">
+                        <h2 class="mt-5">CONTACT US</h2>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control mt-2" placeholder="First Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control mt-2" placeholder="Last Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control mt-2" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control mt-2" placeholder="Telephone" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Write what you wish..." rows="3" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                            <label class="form-check-label" for="invalidCheck2">
+                                                Expecting Return Contact?
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn btn-light" type="submit"><i class="fas fa-envelope-open"></i> Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                        <br /><br />
+                        <div class="col-12">
+                            <h2>Final Project Team</h2>
+                            <i class="fas fa-phone mt-3"></i> <a href="tel:+">(+1) 941-284-0120</a><br>
+                            <i class="fa fa-envelope mt-3"></i> <a href="">theTeam@FinalProject.io</a><br>
+                            <i class="fas fa-globe mt-3"></i> <a href="">2011 Mottman Rd SW, Olympia, WA 98512</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
