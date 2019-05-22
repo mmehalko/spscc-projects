@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Madison Mehalko.
+// 11/1/2017.
+// Excercise 7.
 namespace InvoiceTotal
 {
     public partial class frmInvoiceTotal : Form
@@ -17,48 +20,61 @@ namespace InvoiceTotal
 			InitializeComponent();
 		}
 
-        private void btnCalculate_Click(object sender, EventArgs e)
-        {
-            decimal subtotal = Convert.ToDecimal (invoiceSubtotal.Text);
-            decimal discountPercent = 0m;
-
-            // If subtotal is greater than or equal to 500
-            if (subtotal >= 500)
+		private void btnCalculate_Click(object sender, EventArgs e)
+		{
+            try
             {
-                // Set discount to 20%.
-                discountPercent = .2m;
+                // Check if subtotal string is empty or not.
+                if (String.IsNullOrEmpty(txtSubtotal.Text))
+                {
+                    // If empty, display message.
+                    MessageBox.Show("Subtotal Entry is required.");
+                }
+                // if not empty, continue.
+                else
+                {
+                    // Set variables. Turn subtotal into a decimal, set math.
+                    decimal subtotal = Decimal.Parse(txtSubtotal.Text);
+                    decimal discountPercent = .25m;
+                    decimal discountAmount = subtotal * discountPercent;
+                    decimal invoiceTotal = subtotal - discountAmount;
+
+                    // Check to see if the subtotal entry is greater than 0 or less than 10,000. (Not equal to 0 or 10,000.)
+                    if (subtotal > 0 && subtotal < 10000)
+                    { 
+                        // If entry is valid, round the discountAmount to the 2nd decimal.
+                    discountAmount = Math.Round(discountAmount, 2);
+                        // If entry is valid, round the invoiceTotal to the 2nd decimal.
+                    invoiceTotal = Math.Round(invoiceTotal, 2);
+
+                        // Convert and display totals.
+                    txtDiscountPercent.Text = discountPercent.ToString("p1");
+                    txtDiscountAmount.Text = discountAmount.ToString();
+                    txtTotal.Text = invoiceTotal.ToString();
+                        // Focus back on the subtotal textbox.
+                    txtSubtotal.Focus();
+                    }
+                    else
+                    {
+                        // If the entry is not between 1 and 9,999 show display message.
+                        MessageBox.Show("Entry must be greater than 0 and less than 10,000.");
+                    }
+                }
             }
-            // If subtotal is greater or equal to 250 and subtotal is less than 500
-            else if (subtotal >= 250 && subtotal < 500)
+            catch
             {
-                // Set discount to 15%.
-                discountPercent = .15m;
+                // If all things above fail, display error message.
+                MessageBox.Show(
+                    "Please enter a valid number for the Subtotal field.",
+                    "Entry Error");
             }
-            // If subtotal is greater than or equal to 100 and less than 250
-            else if (subtotal >= 100 && subtotal < 250)
-            {
-                // Set discount to 10%.
-                discountPercent = .1m;
-            }
+		}
 
-            // Set discountAmount and invoiceTotal according to math.
-            decimal discountAmount = subtotal * discountPercent;
-            decimal invoiceTotal = subtotal - discountAmount;
+		private void btnExit_Click(object sender, EventArgs e)
+		{
+            // Close form.
+			this.Close();
+		}
 
-            // Return math to textbox and format properly.
-            txtDiscountPercent.Text = discountPercent.ToString("p1");
-            txtDiscountAmount.Text = discountAmount.ToString("c");
-            txtTotal.Text = invoiceTotal.ToString("c");
-
-            // Set focus to invoiceSubtotal.
-            invoiceSubtotal.Focus();
-        }
-
-        private void btnExit_Click_1(object sender, EventArgs e)
-        {
-            // Close program.
-            this.Close();
-        }
-
-    }
+	}
 }

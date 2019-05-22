@@ -35,7 +35,7 @@ namespace InvoiceTotal
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.invoiceSubtotal = new System.Windows.Forms.TextBox();
+            this.txtSubtotal = new System.Windows.Forms.TextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.txtDiscountPercent = new System.Windows.Forms.TextBox();
@@ -110,12 +110,12 @@ namespace InvoiceTotal
             this.label7.TabIndex = 6;
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // invoiceSubtotal
+            // txtSubtotal
             // 
-            this.invoiceSubtotal.Location = new System.Drawing.Point(106, 9);
-            this.invoiceSubtotal.Name = "invoiceSubtotal";
-            this.invoiceSubtotal.Size = new System.Drawing.Size(100, 20);
-            this.invoiceSubtotal.TabIndex = 1;
+            this.txtSubtotal.Location = new System.Drawing.Point(106, 9);
+            this.txtSubtotal.Name = "txtSubtotal";
+            this.txtSubtotal.Size = new System.Drawing.Size(100, 20);
+            this.txtSubtotal.TabIndex = 1;
             // 
             // btnCalculate
             // 
@@ -134,7 +134,7 @@ namespace InvoiceTotal
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "E&xit";
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // txtDiscountPercent
             // 
@@ -175,7 +175,7 @@ namespace InvoiceTotal
             this.Controls.Add(this.txtDiscountPercent);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCalculate);
-            this.Controls.Add(this.invoiceSubtotal);
+            this.Controls.Add(this.txtSubtotal);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -200,7 +200,7 @@ namespace InvoiceTotal
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.TextBox invoiceSubtotal;
+		private System.Windows.Forms.TextBox txtSubtotal;
 		private System.Windows.Forms.Button btnCalculate;
 		private System.Windows.Forms.Button btnExit;
 		private System.Windows.Forms.TextBox txtDiscountPercent;
