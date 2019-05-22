@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<!-- Madison Mehalko & 
+	 Aimee Hayden
+	 Group Project 2
+	 03/13/2018
+-->
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<!-- Calls scripts and style sheets to utalize Bootstrap -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<!-- Calls personal style sheet and Google fonts -->
+	<link href="styles/main.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light default-color-light fixed-top">
+		<a class="navbar-brand" href="index.html"><img src="images/minilogo.png" alt="Subscript Logo" /></a>
+
+		<div class="collapse navbar-collapse " id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#whatwedo">What We Do <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="divider-vertical"></li>
+				<li class="nav-item">
+					<a class="nav-link" href="#viewourtags">View Our Tags</a>
+				</li>
+				<li class="divider-vertical"></li>
+				<li class="nav-item">
+					<a class="nav-link" href="#snagyourown">Snag Your Own</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<header>
+		<div class="header-content">
+			<img class="img-fluid" src="images/logo.png" alt="Subscript. You think it - We tag it." />
+		</div>
+
+
+
+	</header>
+
+	<section class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<img class="img-fluid" src="images/givelove.png" alt="Give Love">
+				</div>
+				<div class="col-sm-6">
+					<h2 class="section-header">What We Do</h2>
+					<a class="offset" id="whatwedo"></a>
+					<p class="lead text-muted">What do we do here at Subscript? We <a href="https://www.instagram.com/explore/tags/givelove/">#GiveLove</a>! Our dedicated artists are up to the challenge to turn your personal message into a work of art. All we need from you is your message and a desired location (if you have one), leave the rest to us! What are you waiting for? Let's stop, <a href="#snagyourown">collaborate,</a> and listen!</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="content content2">
+		<div class="container">
+			<div class="gallery text">
+				<h2 class="section-header">View Our Tags</h2>
+				<a class="offset" id="viewourtags"></a>
+				<p class="lead">Our artists like to stay anonymous and we understand  that sometimes you do too! Here are some of our favorite requested tags from people out in the community. <br /><br />Feel free to click on images to view them in more detail.</p>
+			</div>
+
+
+			<div class="gallery">
+				<a target="_blank" href="images/examples/beauty.jpg">
+					<img src="images/examples/beauty.jpg" alt="Fjords" width="300" height="200">
+				</a>
+
+			</div>
+
+
+			<div class="gallery">
+				<a target="_blank" href="images/examples/liveagreatstory.jpg">
+					<img src="images/examples/liveagreatstory.jpg" alt="Live A Great Story" width="300" height="200">
+				</a>
+
+			</div>
+			<div class="gallery">
+				<a target="_blank" href="images/examples/mocky.jpg">
+					<img src="images/examples/mocky.jpg" alt="Mocky" width="300" height="200">
+				</a>
+
+			</div>
+			<div class="gallery">
+				<a target="_blank" href="images/examples/msr.jpg">
+					<img src="images/examples/msr.jpg" alt="msr" width="300" height="200">
+				</a>
+
+			</div>
+			<div class="gallery">
+				<a target="_blank" href="images/examples/neverfollow.jpg">
+					<img src="images/examples/neverfollow.jpg" alt="never follow" width="300" height="200">
+				</a>
+
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2 class="section-header">Snag Your Own Tag!</h2>
+					<a class="offset" id="snagyourown"></a>
+					<p class="lead text-muted">Your emotions should not go unexpressed just because you think you do not have the means to make it happen! Brush those nasty thoughts away and know that Subscript is here for you. Shoot us your information and a little more about what you're wanting and a talented artist will contact you immediately. Keep your eyes peeled, we generally respond within 48 hours.</p>
+				</div>
+				<div class="col-sm-6">
+					<div class="card card-outline-secondary">
+						<div class="card-header">
+							<h3 class="mb-0">Contact</h3>
+						</div>
+						<div class="card-body">
+							<form class="form" role="form" autocomplete="off">
+								<fieldset>
+									<label for="name2" class="mb-0">Name</label>
+									<div class="row mb-1">
+										<div class="col-lg-12">
+											<input type="text" name="name2" id="name2" class="form-control" required>
+										</div>
+									</div>
+									<label for="email2" class="mb-0">Email</label>
+									<div class="row mb-1">
+										<div class="col-lg-12">
+											<input type="text" name="email2" id="email2" class="form-control" required>
+										</div>
+									</div>
+									<label for="message2" class="mb-0">Message</label>
+									<div class="row mb-1">
+										<div class="col-lg-12">
+											<textarea rows="6" name="message2" id="message2" class="form-control" required></textarea>
+										</div>
+									</div>
+									<button type="submit" class="btn btn-secondary btn-lg float-right">Send Message</button>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<footer>
+		<div class="container"><p>&copy; Subscript 2018</p></div>
+</footer>
+
+
+
+
+
+
+</body>
+</html>

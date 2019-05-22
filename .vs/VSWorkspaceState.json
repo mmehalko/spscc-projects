@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\C#"
+    "\\C#",
+    "\\C#\\ChangeCalculator",
+    "\\C#\\ChangeCalculator\\ChangeCalculator"
   ],
-  "SelectedNode": "\\Python",
+  "SelectedNode": "\\C#\\ChangeCalculator\\ChangeCalculator\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

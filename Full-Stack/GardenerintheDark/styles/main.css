@@ -1,0 +1,187 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: #5b5b5b;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+    font-size: 87.5%;
+    width: 800px;
+    margin: 0 auto;
+	background-color: #e6e2cf;
+	background-image: url("/images/footer.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom; 
+	
+    
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the header */
+header {
+	text-align: center;
+	margin: 0 auto;
+	padding: 2em;
+}
+
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	
+	
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background: #fefefe; 
+	background: -moz-linear-gradient(top, #fefefe 0%, #e6e6e6 100%); 
+	background: -webkit-linear-gradient(top, #fefefe 0%,#e6e6e6 100%); 
+	background: linear-gradient(to bottom, #fefefe 0%,#e6e6e6 100%); 
+	color: #697861;
+	border-bottom: 0.1em solid #697861;
+    font-weight: bold;
+
+}
+#nav_menu a.current {
+	color: #de9127;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+
+}
+#nav_menu ul ul li {
+	float: none;
+
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+	
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* the styles for the main content */
+main {
+	clear: left;
+
+}
+
+/* the styles for the table */
+figure {
+	margin-top: .5em;
+	margin-left: 0;
+}
+figcaption {
+	color: #800000;
+}
+
+table {
+	border-collapse: collapse;
+}
+table img{
+	width: 220px;
+	border: 1px solid #fff;
+	
+}
+table img:hover{
+	border: 1px solid #de9127;
+}
+
+thead, tfoot {
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+th, td {
+	padding: .2em .7em;
+	text-align: left;
+}
+tfoot th, tfoot td {
+	text-align: right;
+	font-weight: bold;
+}
+.border_bottom {
+	border-bottom: 2px solid #800000;
+}
+.right {
+	text-align: right;
+}
+
+th:first-child, td:first-child {
+	text-align: left;
+}
+th:first-child {
+	vertical-align: bottom; }
+th:nth-child(3) {
+	text-align: center; }
+
+
+/* the styles for the section */
+section {
+padding: 20px;
+	margin: 30px;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 2em;
+}
+section h1 {
+	font-size: 150%;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+	color: #4a614b;
+}
+section h2 {
+	color: #de9127;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+section p {
+	padding-bottom: .5em;
+}
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+section ul {
+	padding: 0 0 .25em 1.25em;
+}
+section li {
+	padding-bottom: .35em;
+}
+
+
+
+
+/* the styles for the footer */
+footer {
+	background-color: #4a614b;
+	clear: both;
+
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}

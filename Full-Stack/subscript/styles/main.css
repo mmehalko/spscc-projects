@@ -1,0 +1,142 @@
+﻿/* Madison Mehalko & 
+	 Aimee Hayden 
+	 Group Project 2 
+	 03/13/2018
+*/
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+a {
+	color: #619b22;
+}
+
+a:hover {
+		color: #000;
+}
+	.navbar {
+	background-color: #fff;
+}
+	.navbar .divider-vertical {
+		height: 25px;
+		margin: 8px;
+		border-right: 1px solid #ffffff;
+		border-left: 1px solid #f2f2f2;
+	}
+
+.navbar-inverse .divider-vertical {
+	border-right-color: #222222;
+	border-left-color: #111111;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	min-height: auto;
+	text-align: center;
+	color: #fff;
+	background-image: url('../images/headerbg.png');
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+	header .header-content {
+		position: relative;
+		width: 100%;
+		padding: 100px 15px 70px;
+		text-align: center;
+	}
+
+
+@media(min-width:768px) {
+	header {
+		min-height: 100%;
+	}
+
+		header .header-content {
+			position: absolute;
+			top: 50%;
+			margin: 0 auto;
+			padding: 0 50px;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+		}
+}
+
+.content {
+	padding: 100px 0;
+
+}
+.content2 {
+	background: #ed86b5;
+
+}
+	.content2 a {
+		color: #ed86b5;
+	}
+
+footer {
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	background-color: #8fc34b;
+	padding: 50px 0;
+	text-align: center;
+
+}
+
+a.offset {
+	display: block;
+	position: relative;
+	top: -200px;
+	visibility: hidden;
+}
+div.gallery {
+	margin: 5px;
+	border: 1px solid #ccc;
+	background: #f2f2f2;
+	height: 400px;
+	width: auto;
+	max-height: 400px;
+	max-width: 350px;
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+
+div.text {
+	padding: 20px;
+}
+
+div.gallery:hover {
+		border: 1px solid #777;
+	}
+
+div.gallery img {
+	width: auto;
+	height: 100%;
+	margin-left: -50px;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+div.gallery img:hover {
+	filter: none;
+	-webkit-filter: grayscale(0);
+}
+
+	input:required, input[required] {
+		border: 3px solid red;
+	}
+
+	input:valid {
+		border: 1px solid #609B1D;
+	}
+
+	input:invalid {
+		box-shadow: none;
+	}
