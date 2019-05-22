@@ -1,0 +1,189 @@
+﻿body {
+}
+html {
+    height: 100%;
+}
+
+body {
+    /* We found a great gradiant builder @ https://cssgradient.io/ */
+    background-color: #103e1a;
+    background-image: -webkit-radial-gradient(circle, rgba(39,113,54,1) 0%, rgba(16,62,26,0) 65%);
+    background-image: -moz-radial-gradient(circle, rgba(39,113,54,1) 0%, rgba(16,62,26,0) 65%);
+    background-image: -ms-radial-gradient(circle, rgba(39,113,54,1) 0%, rgba(16,62,26,0) 65%);
+    background-image: -o-radial-gradient(circle, rgba(39,113,54,1) 0%, rgba(16,62,26,0) 65%);
+    background-image: radial-gradient(circle, rgba(39,113,54,1) 0%, rgba(16,62,26,0) 65%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.header {
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: 5;
+    background-color: #4B2A2A;
+    height: 200px;
+    width: 100%;
+    border-bottom: 1px #4F1B17 solid;
+    -webkit-box-shadow: 0px 10px 14px -5px rgba(57,162,78,1);
+    -moz-box-shadow: 0px 10px 14px -5px rgba(57,162,78,1);
+    box-shadow: 0px 10px 14px -5px rgba(57,162,78,1);
+    text-align: center;
+}
+
+    .header img {
+        padding: 20px;
+        height: 160px;
+        position: relative;
+    }
+
+.info {
+    top: 25%;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    background: #353738;
+    border-radius: 20px;
+    height: 60px;
+    line-height: 60px;
+    width: 25%;
+    font: #FFF;
+    z-index: 6;
+    border: 1px #222 solid;
+    -webkit-box-shadow: inset 0px 0px 50px -8px rgba(0,0,0,0.78);
+    -moz-box-shadow: inset 0px 0px 50px -8px rgba(0,0,0,0.78);
+    box-shadow: inset 0px 0px 50px -8px rgba(0,0,0,0.78);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    margin-top: 250px;
+    text-align: center;
+}
+
+.outcome {
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #fcf8f2;
+    width: 100px;
+    height: 110px;
+    padding: 14px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.dealer {
+    text-align: center;
+    border-radius: 15px;
+    background-color: #fcf8f2;
+    width: 300px;
+    height: 110px;
+    padding: 14px;
+    vertical-align: top;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.dealerscore {
+    font-size: 60px;
+    display: block;
+}
+
+.dealer img {
+    width: 100px;
+    float: left;
+}
+
+.playerwrapper {
+    margin: 0 0 0 -100px;
+    width: 80%;
+    text-align: center;
+}
+
+.player {
+    display: inline-block;
+    height: 195px;
+    width: 130px;
+    background-image: url(/images/cardback.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 10px;
+}
+
+
+h2 {
+    margin-right: 500px;
+    color: #fcf8f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btnwrapper {
+    float: left;
+    margin-left: 20%;
+    width: 5%;
+}
+
+    .btnwrapper button {
+        background-image: -webkit-linear-gradient(top, #5C5E70, #474957);
+        background-image: -moz-linear-gradient(top, #5C5E70, #474957);
+        background-image: -ms-linear-gradient(top, #5C5E70, #474957);
+        background-image: -o-linear-gradient(top, #5C5E70, #474957);
+        background-image: linear-gradient(to bottom, #5C5E70, #474957);
+        box-shadow: 1px 1px 20px 0px #000000;
+        -webkit-box-shadow: 1px 1px 20px 0px #000000;
+        -moz-box-shadow: 1px 1px 20px 0px #000000;
+        text-shadow: 1px 1px 20px #000000;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        border: solid #48B847 5px;
+        display: block;
+        cursor: pointer;
+        margin: 20px 0 20px 0;
+        width: 75px;
+        height: 75px;
+        line-height: 50px;
+        color: #fcf8f2;
+        font-family: Open Sans;
+        font-size: 15px;
+        font-weight: 200;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+    }
+
+        .btnwrapper button:hover {
+            background: #3B963A;
+            background-image: -webkit-linear-gradient(top, #3B963A, #358734);
+            background-image: -moz-linear-gradient(top, #3B963A, #358734);
+            background-image: -ms-linear-gradient(top, #3B963A, #358734);
+            background-image: -o-linear-gradient(top, #3B963A, #358734);
+            background-image: linear-gradient(to bottom, #3B963A, #358734);
+        }
+
+.footer {
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+    z-index: 5;
+    background-color: #4B2A2A;
+    height: 120px;
+    width: 100%;
+    border-top: 1px #4F1B17 solid;
+    -webkit-box-shadow: 0px -10px 14px -5px rgba(57,162,78,1);
+    -moz-box-shadow: 0px -10px 14px -5px rgba(57,162,78,1);
+    box-shadow: 0px -10px 14px -5px rgba(57,162,78,1);
+    text-align: center;
+}
+
+    .footer img {
+        right: 0px;
+        bottom: 0px;
+        position: fixed;
+    }
