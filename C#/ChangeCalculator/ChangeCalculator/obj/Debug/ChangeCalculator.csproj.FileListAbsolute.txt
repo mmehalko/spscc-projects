@@ -1,0 +1,46 @@
+C:\Users\Anne.murach\Documents\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.exe.config
+C:\Users\Anne.murach\Documents\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.exe
+C:\Users\Anne.murach\Documents\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.pdb
+C:\Users\Anne.murach\Documents\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Anne.murach\Documents\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.Form1.resources
+C:\Users\Anne.murach\Documents\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.Properties.Resources.resources
+C:\Users\Anne.murach\Documents\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csproj.GenerateResource.Cache
+C:\Users\Anne.murach\Documents\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.exe
+C:\Users\Anne.murach\Documents\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.pdb
+C:\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.exe.config
+C:\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.exe
+C:\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.pdb
+C:\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.exe
+C:\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.pdb
+C:\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csprojResolveAssemblyReference.cache
+C:\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.Form1.resources
+C:\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.Properties.Resources.resources
+C:\C# 2012 Instructor's CD\Extra exercise solutions\Chapter 05\ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csproj.GenerateResource.Cache
+C:\C# 2015\Extra exercises\Exercise solutions\Chapter 05\Extra 5-2 ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.exe.config
+C:\C# 2015\Extra exercises\Exercise solutions\Chapter 05\Extra 5-2 ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.exe
+C:\C# 2015\Extra exercises\Exercise solutions\Chapter 05\Extra 5-2 ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.pdb
+C:\C# 2015\Extra exercises\Exercise solutions\Chapter 05\Extra 5-2 ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.exe
+C:\C# 2015\Extra exercises\Exercise solutions\Chapter 05\Extra 5-2 ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.pdb
+C:\C# 2015\Extra exercises\Exercise solutions\Chapter 05\Extra 5-2 ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csprojResolveAssemblyReference.cache
+C:\C# 2015\Extra exercises\Exercise solutions\Chapter 05\Extra 5-2 ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.Form1.resources
+C:\C# 2015\Extra exercises\Exercise solutions\Chapter 05\Extra 5-2 ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.Properties.Resources.resources
+C:\C# 2015\Extra exercises\Exercise solutions\Chapter 05\Extra 5-2 ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csproj.GenerateResource.Cache
+C:\Users\Madison\Desktop\Extra 5-2 ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.exe.config
+C:\Users\Madison\Desktop\Extra 5-2 ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.exe
+C:\Users\Madison\Desktop\Extra 5-2 ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.pdb
+C:\Users\Madison\Desktop\Extra 5-2 ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Madison\Desktop\Extra 5-2 ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.Form1.resources
+C:\Users\Madison\Desktop\Extra 5-2 ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.Properties.Resources.resources
+C:\Users\Madison\Desktop\Extra 5-2 ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csproj.GenerateResource.Cache
+C:\Users\Madison\Desktop\Extra 5-2 ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Madison\Desktop\Extra 5-2 ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.exe
+C:\Users\Madison\Desktop\Extra 5-2 ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.pdb
+C:\Users\Madison\Source\Repos\spscc-projects\C#\7ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.exe.config
+C:\Users\Madison\Source\Repos\spscc-projects\C#\7ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.exe
+C:\Users\Madison\Source\Repos\spscc-projects\C#\7ChangeCalculator\ChangeCalculator\bin\Debug\ChangeCalculator.pdb
+C:\Users\Madison\Source\Repos\spscc-projects\C#\7ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.Form1.resources
+C:\Users\Madison\Source\Repos\spscc-projects\C#\7ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.Properties.Resources.resources
+C:\Users\Madison\Source\Repos\spscc-projects\C#\7ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csproj.GenerateResource.cache
+C:\Users\Madison\Source\Repos\spscc-projects\C#\7ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Madison\Source\Repos\spscc-projects\C#\7ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.exe
+C:\Users\Madison\Source\Repos\spscc-projects\C#\7ChangeCalculator\ChangeCalculator\obj\Debug\ChangeCalculator.pdb
