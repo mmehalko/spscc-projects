@@ -1,5 +1,5 @@
 ﻿
-var Balance = 100;
+var Balance = Number("100");
 var cardValues = ["ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"];
 var cardSuits = [" of Hearts", " of Diamonds", " of Spades", " of Clubs"];
 var card1 = 0;
@@ -15,8 +15,8 @@ var ID5;
 var CardCount = 0;
 function newCard() {
 
-    var ID
-    var value
+    var ID;
+    var value;
     do {
 
         var randSuit;
@@ -102,7 +102,7 @@ function dealerHand() {
     return Math.floor((Math.random() * 8) + 17); //random value between 16 and 23
 }
 function EndGame() {
-    var total;
+    var total = Number("0");
     total = card1 + card2 + card3 + card4 + card5;
     if (card1 = 11 && total > 21) {
         total -= 10;
@@ -120,7 +120,8 @@ function EndGame() {
         total -= 10;
     }
 
-    var Bet = document.getElementById("betAmount").value;
+    // Bet needed to be cast as a number to avoid concatenation with balance.
+    var Bet = Number(document.getElementById("betAmount").value);
     var dealerScore = dealerHand();
     if (card1 != "" && card2 != "" && card3 != "" && card4 != "" && card5 != "" && total < 22) {
         document.getElementById("dealerHand").innerHTML = dealerScore;
@@ -130,18 +131,18 @@ function EndGame() {
     else if (total > 21) {
         
         document.getElementById("outcome").innerHTML = "You Bust!";
-        document.getElementById("dealerHand").innerHTML = dealerScore
+        document.getElementById("dealerHand").innerHTML = dealerScore;
         Balance -= Bet;
     }
     else if (dealerScore > 21) {
         document.getElementById("outcome").innerHTML = "Dealer Bust!";
-        document.getElementById("dealerHand").innerHTML = dealerScore
+        document.getElementById("dealerHand").innerHTML = dealerScore;
         Balance += Bet;
     }
     else if (total > dealerScore) {
         document.getElementById("outcome").innerHTML =  "You Win!";
         Balance += Bet;
-        document.getElementById("dealerHand").innerHTML = dealerScore
+        document.getElementById("dealerHand").innerHTML = dealerScore;
     }
     else if (total < dealerScore) {
         document.getElementById("outcome").innerHTML = "You Lose!";

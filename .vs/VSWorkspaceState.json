@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\C#",
-    "\\C#\\ChangeCalculator",
-    "\\C#\\ChangeCalculator\\ChangeCalculator"
+    "\\C#\\ChangeCalculator\\ChangeCalculator",
+    "\\Full-Stack",
+    "\\JavaScript",
+    "\\JavaScript\\WebApplication1",
+    "\\Java\\TeamProject"
   ],
-  "SelectedNode": "\\C#\\ChangeCalculator\\ChangeCalculator\\Form1.cs",
+  "SelectedNode": "\\JavaScript\\WebApplication1\\WebApplication1.sln",
   "PreviewInSolutionExplorer": false
 }
