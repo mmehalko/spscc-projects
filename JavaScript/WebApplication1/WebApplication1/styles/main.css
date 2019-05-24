@@ -108,19 +108,23 @@ body {
     padding-left: 10em;
     max-width: 80%;
     margin-bottom: 15em;
+
 }
+
 
 .player {
     width: auto;
     height: auto;
     max-width: 130px;
     max-height: 195px;
+    padding-top: 90px;
     object-fit: cover;
     background-image: url(/images/cardback.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    border-radius: 10px;
+    
 }
-
 
 h2 {
     display: block;
@@ -169,6 +173,15 @@ h3{
         text-decoration: none;
         text-align: center;
     }
+        .btnwrapper button:disabled {
+            background: #444;
+            color: #000;
+            border: 0px;
+        }
+        .btnwrapper button:disabled:hover {
+            background: #444;
+            color: #000;
+        } 
 
         .btnwrapper button:hover {
             background: #3B963A;
@@ -178,6 +191,7 @@ h3{
             background-image: -o-linear-gradient(top, #3B963A, #358734);
             background-image: linear-gradient(to bottom, #3B963A, #358734);
         }
+
 
 .footer {
     right: 0px;

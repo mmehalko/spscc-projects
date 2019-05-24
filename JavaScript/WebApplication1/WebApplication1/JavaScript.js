@@ -14,9 +14,6 @@ var ID4;
 var ID5;
 var CardCount = 0;
 
-var total = Number("0");
-total = card1 + card2 + card3 + card4 + card5;
-
 
 function newCard() {
 
@@ -104,11 +101,15 @@ function newCard() {
 }
 function onLoad() {
     document.getElementById("currentBal").innerHTML = Balance;
+    document.getElementById("Stand").disabled = true;
+    document.getElementById("Hit").disabled = true;
 }
 function dealerHand() {
     return Math.floor((Math.random() * 8) + 17); //random value between 16 and 23
 }
 function EndGame() {
+    var total = Number("0");
+
     if (card1 = 11 && total > 21) {
         total -= 10;
     }
@@ -124,9 +125,8 @@ function EndGame() {
     if (card5 = 11 && total > 21) {
         total -= 10;
     }
-    
+  
     total = card1 + card2 + card3 + card4 + card5;
-
 
     // Bet needed to be cast as a number to avoid concatenation with balance.
     var Bet = Number(document.getElementById("betAmount").value);
@@ -185,6 +185,8 @@ function NewGame() {
         document.getElementById("card4").style.backgroundImage = "url('/images/cardback.png')";
         document.getElementById("card5").style.backgroundImage = "url('/images/cardback.png')";
     }
+    document.getElementById("NewGame").disabled = true;
+
     CardCount = 0;
     card1 = 0;
     card2 = 0;
@@ -204,7 +206,8 @@ function NewGame() {
     document.getElementById("card2").style.background = "#fcf8f2";
     document.getElementById("Stand").disabled = false;
     document.getElementById("Hit").disabled = false;
-    //document.getElementById("NewGame").disabled = true;
+    
+    
 
 }
 function Hit() {
