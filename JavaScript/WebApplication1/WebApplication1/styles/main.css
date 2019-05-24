@@ -101,24 +101,29 @@ body {
 }
 
 .playerwrapper {
-    margin: 0 0 0 -100px;
-    width: 80%;
-    text-align: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-auto-rows: 195px;
+    padding-left: 10em;
+    max-width: 80%;
+    margin-bottom: 15em;
 }
 
 .player {
-    display: inline-block;
-    height: 195px;
-    width: 130px;
+    width: auto;
+    height: auto;
+    max-width: 130px;
+    max-height: 195px;
+    object-fit: cover;
     background-image: url(/images/cardback.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin: 10px;
 }
 
 
 h2 {
-    margin-right: 500px;
+    display: block;
     color: #fcf8f2;
     font-family: 'Open Sans', sans-serif;
 }
@@ -132,7 +137,7 @@ h3{
 }
 .btnwrapper {
     float: left;
-    margin-left: 20%;
+    margin-left: 10%;
     width: 5%;
 }
 

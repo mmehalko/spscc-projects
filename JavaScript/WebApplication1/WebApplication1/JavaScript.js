@@ -13,6 +13,11 @@ var ID3;
 var ID4;
 var ID5;
 var CardCount = 0;
+
+var total = Number("0");
+total = card1 + card2 + card3 + card4 + card5;
+
+
 function newCard() {
 
     var ID;
@@ -95,6 +100,7 @@ function newCard() {
     }
     //var rtnArray = [value, ID];
     //return rtnArray;
+    document.getElementById("total").innerHTML = card1 + card2 + card3 + card4 + card5;
 }
 function onLoad() {
     document.getElementById("currentBal").innerHTML = Balance;
@@ -103,8 +109,6 @@ function dealerHand() {
     return Math.floor((Math.random() * 8) + 17); //random value between 16 and 23
 }
 function EndGame() {
-    var total = Number("0");
-    total = card1 + card2 + card3 + card4 + card5;
     if (card1 = 11 && total > 21) {
         total -= 10;
     }
@@ -120,28 +124,31 @@ function EndGame() {
     if (card5 = 11 && total > 21) {
         total -= 10;
     }
+    
+    total = card1 + card2 + card3 + card4 + card5;
+
 
     // Bet needed to be cast as a number to avoid concatenation with balance.
     var Bet = Number(document.getElementById("betAmount").value);
     var dealerScore = dealerHand();
     if (card1 != "" && card2 != "" && card3 != "" && card4 != "" && card5 != "" && total < 22) {
         document.getElementById("dealerHand").innerHTML = dealerScore;
-        document.getElementById("outcome").innerHTML = "Charlie Rule";
+        document.getElementById("outcome").innerHTML = "Charlie Rule <br> You Win $" + Bet + "!";
         Balance += Bet;
     }
     else if (total > 21) {
         
-        document.getElementById("outcome").innerHTML = "You Bust!";
+        document.getElementById("outcome").innerHTML = "You Bust! <br> You Lose $" + Bet + "!";
         document.getElementById("dealerHand").innerHTML = dealerScore;
         Balance -= Bet;
     }
     else if (dealerScore > 21) {
-        document.getElementById("outcome").innerHTML = "Dealer Bust! ";
+        document.getElementById("outcome").innerHTML = "Dealer Bust! <br> You Win $" + Bet + "!";
         document.getElementById("dealerHand").innerHTML = dealerScore;
         Balance += Bet;
     }
     else if (total > dealerScore) {
-        document.getElementById("outcome").innerHTML =  "You Win $" + Bet + "!";
+        document.getElementById("outcome").innerHTML = "You Win $" + Bet + "!";
         Balance += Bet;
         document.getElementById("dealerHand").innerHTML = dealerScore;
     }
@@ -151,7 +158,7 @@ function EndGame() {
         document.getElementById("dealerHand").innerHTML = dealerScore;
     }
     else if (total == dealerScore) {
-        document.getElementById("outcome").innerHTML = "Tie: House Wins";
+        document.getElementById("outcome").innerHTML = "Tie: House Wins <br> You Lose $" + Bet + "!";
 
         Balance -= Bet;
         document.getElementById("dealerHand").innerHTML = dealerScore;
