@@ -68,29 +68,30 @@ function newCard() {
                 break;
         }
 
-    } while (ID == ID1 && ID == ID2 && ID == ID3 && ID == ID4 && ID == ID5)
-    CardCount++;
-    switch (CardCount) {
-        case 1:
-            card1 = value;
-            ID1 = ID;
-            break;
-        case 2:
-            card2 = value;
-            ID2 = ID;
-            break;
-        case 3:
-            card3 = value;
-            ID3 = ID;
-            break;
-        case 4:
-            card4 = value;
-            ID4 = ID;
-            break;
-        case 5:
-            card5 = value;
-            ID5 = ID;
-            break;
+    } while (ID === ID1 && ID === ID2 && ID === ID3 && ID === ID4 && ID === ID5) {
+        CardCount++;
+        switch (CardCount) {
+            case 1:
+                card1 = value;
+                ID1 = ID;
+                break;
+            case 2:
+                card2 = value;
+                ID2 = ID;
+                break;
+            case 3:
+                card3 = value;
+                ID3 = ID;
+                break;
+            case 4:
+                card4 = value;
+                ID4 = ID;
+                break;
+            case 5:
+                card5 = value;
+                ID5 = ID;
+                break;
+        }
     }
     //var rtnArray = [value, ID];
     //return rtnArray;
@@ -125,7 +126,7 @@ function EndGame() {
     var dealerScore = dealerHand();
     if (card1 != "" && card2 != "" && card3 != "" && card4 != "" && card5 != "" && total < 22) {
         document.getElementById("dealerHand").innerHTML = dealerScore;
-        document.getElementById("outcome").innerHTML = "You Win: Charlie Rule";
+        document.getElementById("outcome").innerHTML = "Charlie Rule";
         Balance += Bet;
     }
     else if (total > 21) {
@@ -135,22 +136,23 @@ function EndGame() {
         Balance -= Bet;
     }
     else if (dealerScore > 21) {
-        document.getElementById("outcome").innerHTML = "Dealer Bust!";
+        document.getElementById("outcome").innerHTML = "Dealer Bust! ";
         document.getElementById("dealerHand").innerHTML = dealerScore;
         Balance += Bet;
     }
     else if (total > dealerScore) {
-        document.getElementById("outcome").innerHTML =  "You Win!";
+        document.getElementById("outcome").innerHTML =  "You Win $" + Bet + "!";
         Balance += Bet;
         document.getElementById("dealerHand").innerHTML = dealerScore;
     }
     else if (total < dealerScore) {
-        document.getElementById("outcome").innerHTML = "You Lose!";
+        document.getElementById("outcome").innerHTML = "You Lose $" + Bet + "!";
         Balance -= Bet;
         document.getElementById("dealerHand").innerHTML = dealerScore;
     }
     else if (total == dealerScore) {
         document.getElementById("outcome").innerHTML = "Tie: House Wins";
+
         Balance -= Bet;
         document.getElementById("dealerHand").innerHTML = dealerScore;
     }
